@@ -6,6 +6,7 @@ const SharedLayout = () => {
     <>
       <Navigation />
       <Outlet />
+      <p>Hello world!</p>
     </>
   );
 };
