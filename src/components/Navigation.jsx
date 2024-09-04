@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Navigation = () => {
   return (
     <nav className="navbar pt-0">
-      <div className="d-flex p-3 container-fluid bg-danger">
+      <div className="d-flex p-3 container-fluid bg-darkgreen">
         <Link to="/" className="ps-5 navbar-brand text-white">
           Nanny.Services
         </Link>

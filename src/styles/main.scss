@@ -1,0 +1,15 @@
+// Import Bootstrap's core functions and variables
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+// Define your custom colors map
+$main-colors: (
+  "darkgreen": #103931,
+  "lightgray": #f3f3f3,
+);
+
+// Merge custom colors into Bootstrap's theme-colors map
+$theme-colors: map-merge($main-colors, $theme-colors);
+
+// Import Bootstrap's core styles after defining your variables and colors
+@import "../../node_modules/bootstrap/scss/bootstrap";
