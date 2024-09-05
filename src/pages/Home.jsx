@@ -14,8 +14,12 @@ const Home = () => {
             Get started <i className="bi bi-arrow-up-right"></i>
           </button>
         </div>
-        <div className="col-6 bg-primary">
-          <img src="/home-img.png" alt="home image" className="img-thumbnail" />
+        <div className="col-6 p-0">
+          <img
+            src="/nanny-services-website/home-img.png"
+            alt="home image"
+            className="img-fluid"
+          />
         </div>
       </div>
     </>
