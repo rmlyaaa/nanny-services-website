@@ -15,11 +15,7 @@ const Home = () => {
           </button>
         </div>
         <div className="col-6 bg-primary">
-          <img
-            src="../../public/home-img.png"
-            alt="home image"
-            className="img-thumbnail"
-          />
+          <img src="/home-img.png" alt="home image" className="img-thumbnail" />
         </div>
       </div>
     </>
