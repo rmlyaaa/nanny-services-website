@@ -3,7 +3,7 @@ import logoImg from "/nanny.svg";
 
 const Navigation = () => {
   return (
-    <nav className="navbar pt-0">
+    <nav className="navbar py-0">
       <div className="d-flex p-3 container-fluid bg-darkgreen">
         <Link to="/" className="ps-5 navbar-brand text-white">
           <img src={logoImg} width="24" height="24" className="pb-1 pe-1"></img>
