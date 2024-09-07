@@ -1,31 +1,37 @@
+import moment from "moment";
+
 const Card = ({ nanny }) => {
+  const age = moment().diff(nanny.birthday, "years");
+
   return (
-    <div className="row bg-white rounded-4">
+    <div className="mt-3 p-3 row bg-white rounded-4">
       <img
         src={nanny.avatar_url}
         alt="nanny-photo"
-        className="img-thubnail col-2"
+        className="img-thumbnail col-2"
       />
       <div className="col-10">
         <h4>{nanny.name}</h4>
-        <ul>
-          <li className="bg-lightgray">
-            Age: <span className="text-black"> </span>
+        <ul className="list-group list-unstyled list-group-horizontal gap-2">
+          <li className="p-2 bg-lightgray text-midgray rounded-4">
+            Age: <span className="text-black"> {age} </span>
           </li>
-          <li className="bg-lightgray">
-            Experience: <span className="text-black"> {nanny.experience} </span>
+          <li className="p-2 bg-lightgray text-midgray rounded-4">
+            Experience:
+            <span className="text-black "> {nanny.experience} </span>
           </li>
-          <li className="bg-lightgray">
+          <li className="p-2 bg-lightgray text-midgray rounded-4">
             Kids Age: <span className="text-black"> {nanny.kids_age} </span>
           </li>
-          <li className="bg-lightgray">
-            Characters: <span className="text-black"> {nanny.characters} </span>
+          <li className="p-2 bg-lightgray text-midgray rounded-4">
+            Characters:{" "}
+            <span className="text-black"> {nanny.characters.join(", ")} </span>
           </li>
-          <li className="bg-lightgray">
+          <li className="p-2 bg-lightgray text-midgray rounded-4">
             Education: <span className="text-black"> {nanny.education} </span>
           </li>
         </ul>
-        <p className="text-midgray">{nanny.about}</p>
+        <p className="mt-3 text-midgray">{nanny.about}</p>
       </div>
     </div>
   );
