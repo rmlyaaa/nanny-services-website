@@ -1,6 +1,7 @@
 import { get, ref } from "firebase/database";
 import { useEffect, useState } from "react";
 import { database } from "../firebaseConfig";
+
 import Card from "./Card";
 
 const CardList = () => {
@@ -24,12 +25,18 @@ const CardList = () => {
         console.error(error);
       });
   }, []);
+
   return (
-    <>
-      {nannys.map((nanny) => (
-        <Card nanny={nanny} key={nanny.id} />
-      ))}
-    </>
+    <div className="container justify-content-center">
+      <ul className="list-unstyled">
+        {nannys.map((nanny) => (
+          <Card nanny={nanny} key={nanny.id} />
+        ))}
+      </ul>
+      <button className="btn mt-3 px-5 py-2 border border-1 rounded-pill bg-darkgreen text-white">
+        Load more
+      </button>
+    </div>
   );
 };
 

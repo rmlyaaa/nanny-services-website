@@ -14,3 +14,9 @@ $theme-colors: map-merge($main-colors, $theme-colors);
 
 // Import Bootstrap's core styles after defining your variables and colors
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap");
+
+:root {
+  --bs-body-font-family: "Geologica", sans-serif;
+}
