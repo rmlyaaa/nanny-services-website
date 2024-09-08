@@ -5,7 +5,9 @@ const Home = () => {
     <div className=" mt-2 d-flex justify-content-center">
       <div className="mx-5 p-0 row container-lg align-items-center bg-darkgreen rounded-4">
         <div className="col-6 p-5 ">
-          <h1 className="mb-3 text-white ">Make Life Easier for the Family:</h1>
+          <h1 className="mb-3 text-white fw-bold ">
+            Make Life Easier for the Family:
+          </h1>
           <h5 className="mb-4 text-white fw-light">
             Find Babysitters Online for All Ocassions
           </h5>
