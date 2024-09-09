@@ -7,7 +7,7 @@ import {
   endAt,
 } from "firebase/database";
 import { useEffect, useState } from "react";
-import { database } from "../firebaseConfig";
+import { database } from "../firebase/firebaseConfig";
 
 import Card from "./Card";
 

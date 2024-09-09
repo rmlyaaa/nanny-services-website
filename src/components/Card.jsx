@@ -8,7 +8,7 @@ const Card = ({ nanny }) => {
       <img
         src={nanny.avatar_url}
         alt="nanny-photo"
-        className="img col-2 rounded"
+        className=" col-2 rounded"
       />
       <div className="col-10">
         <h4>{nanny.name}</h4>

@@ -22,6 +22,7 @@ const Home = () => {
           <img src={homeImg} alt="home image" className="img-fluid" />
         </div>
       </div>
+      {/* <div dangerouslySetInnerHTML={{ __html: text }} /> */}
     </div>
   );
 };
