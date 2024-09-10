@@ -1,4 +1,5 @@
 import homeImg from "/home-img.png";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -11,12 +12,14 @@ const Home = () => {
           <h5 className="mb-4 text-white fw-light">
             Find Babysitters Online for All Ocassions
           </h5>
-          <button
-            type="button"
-            className="btn mt-2 px-5 py-2 border border-1 rounded-pill text-white"
-          >
-            Get started <i className="bi bi-arrow-up-right"></i>
-          </button>
+          <Link to="/nannies">
+            <button
+              type="button"
+              className="btn mt-2 px-5 py-2 border border-1 rounded-pill text-white"
+            >
+              Get started <i className="bi bi-arrow-up-right"></i>
+            </button>
+          </Link>
         </div>
         <div className="col-6 p-0">
           <img src={homeImg} alt="home image" className="img-fluid" />
